@@ -1,4 +1,5 @@
 def our_decorator(some_function):
+    """decorator that notifies that a function has been executed"""
     def wrapper(*args):
         print(f'{some_function.__name__} has been executed')
         res = some_function(*args)
